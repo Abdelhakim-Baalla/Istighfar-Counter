@@ -1,54 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    text-align: center;
+    direction: rtl;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Couleur de fond plus douce */
+    color: #ecf0f1; /* Texte en gris clair */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: radial-gradient(circle, #e0f7fa, #80deea);
+    min-height: 100vh;
     margin: 0;
-    color: #333;
+    padding: 20px;
 }
+
 .counter-container {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Arrière-plan plus transparent */
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     backdrop-filter: blur(10px);
-    width: 300px;
+    width: 100%;
+    max-width: 320px;
     transition: transform 0.2s ease-in-out;
+    margin-bottom: 20px;
 }
+
 .counter-container:hover {
     transform: scale(1.05);
 }
+
 h1 {
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #00796b;
+    font-size: 24px;
+    color: #f39c12; /* Couleur dorée pour le titre */
+    margin-bottom: 15px;
 }
+
 .count {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     margin: 20px 0;
-    color: #00796b;
+    color: #f39c12; /* Couleur dorée pour le compteur */
     transition: transform 0.2s ease-in-out;
 }
+
 .count.updated {
     transform: scale(1.2);
 }
+
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
+    margin-bottom: 15px;
 }
+
 button {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     border: none;
     border-radius: 50%;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -58,13 +72,65 @@ button {
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 .increment {
-    background: #009688;
+    background: #27ae60; /* Vert */
 }
+
+.decrement {
+    background: #c0392b; /* Rouge */
+}
+
 .reset {
-    background: #d32f2f;
+    background: #f39c12; /* Orange */
+    color: #2c3e50; /* Texte sombre pour le bouton reset */
 }
+
 button:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dhikr-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.dhikr-list li {
+    background: rgba(255, 255, 255, 0.1); /* Arrière-plan plus transparent */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dhikr-list li:hover {
+    background: #f39c12; /* Couleur dorée au survol */
+    color: #2c3e50; /* Texte sombre au survol */
+    transform: scale(1.05);
+}
+
+.two-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .two-div {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .counter-container {
+        margin-bottom: 0;
+    }
 }

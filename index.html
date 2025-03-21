@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Istighfar Counter</title>
+    <title>عداد الذكر</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="two-div">
     <div class="counter-container">
-        <h1>Istighfar Counter</h1>
+        <h1>📿 عداد الذكر</h1>
         <div class="count" id="count">0</div>
         <div class="buttons">
             <button class="increment" id="increment">+</button>
             <button class="reset" id="reset">↺</button>
+            <button class="decrement" id="decrement">-</button>
         </div>
+        
     </div>
 
+    <ul class="dhikr-list">
+        <li onclick="setDhikr('استغفر الله')">استغفر الله</li>
+        <li onclick="setDhikr('سبحان الله')">سبحان الله</li>
+        <li onclick="setDhikr('الحمد لله')">الحمد لله</li>
+        <li onclick="setDhikr('الله أكبر')">الله أكبر</li>
+        <li onclick="setDhikr('لا إله إلا الله')">لا إله إلا الله</li>
+    </ul>
+</div>
+    
 
     <script src="script.js"></script>
 </body>
