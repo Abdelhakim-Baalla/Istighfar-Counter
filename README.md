@@ -1,5 +1,7 @@
 # 📿 Istighfar Counter
 
+[Ouvrir le site](https://istighfar-counter.vercel.app/) · [Mise à jour du compteur](https://github.com/Abdelhakim-Baalla/Istighfar-Counter/blob/main/script.js)
+
 Un compteur simple et élégant pour suivre le nombre de fois où **"Astaghfirullah"** est récité.  
 Interface moderne, responsive et facile à utiliser. 🌿✨
 
